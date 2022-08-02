@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+
+import os
+
+
+
+print("hi this is a simple program i made in my free time")
+
+
+
+print("if you don't know how to use multis-py type help or press enter to skip this message.")
+
+
+
+r = input()
+if r == 'help':
+    print("multis-py is a simple program that updates cleans displays system info and more.")
+
+
+
+while True:
+ str = "what would you like to do?\n(1) update the system\n(2) clean the system\n(3) display disk info\n(4) display the weather\n(5) display system info\n(6) exit"
+
+ print(str)
+
+
+
+
+ e = input( )
+
+
+ if e == '1':
+    os.system("sudo apt update && sudo apt upgrade -yy")
+
+
+
+
+ if e == '2':
+    os.system("sudo apt-get autoremove -yy && sudo apt-get autoclean")
+
+
+
+
+ if e == '3':
+    os.system("lsblk && df -h")
+
+
+
+
+ if e == '4':
+     os.system("curl wttr.in")
+
+
+
+
+ if e == '5':
+     os.system("neofetch")
+     #or if you want to use pfetch
+     #os.system("pfetch")
+     
+
+
+
+ if e == '6':
+     os.system("exit")
+     break
+
+
