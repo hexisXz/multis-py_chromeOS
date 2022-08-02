@@ -30,19 +30,19 @@ while True:
 
 
  if e == '1':
-    os.system("sudo apt update && sudo apt upgrade -yy")
+    os.system("apt update && sudo apt upgrade -yy")
 
 
 
 
  if e == '2':
-    os.system("sudo apt-get autoremove -yy && sudo apt-get autoclean")
+    os.system("apt-get autoremove -yy && sudo apt-get autoclean")
 
 
 
 
  if e == '3':
-    os.system("lsblk && df -h")
+    os.system("df -h")
 
 
 
